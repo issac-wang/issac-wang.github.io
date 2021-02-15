@@ -313,7 +313,7 @@
         <div class="brand">
             <div class="title center-align">
                 
-                PM DIARY
+                产品罐头
                 
             </div>
 
@@ -323,7 +323,7 @@
                 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
                 <script>
                     var typed = new Typed("#subtitle", {
-                        strings: ['万物皆有裂痕，那是光照进来的地方。','There&#39;s a crack in everything. That&#39;s how the light gets in.'],
+                        strings: ['万物皆有裂痕，但那是光照进来的地方。','There&#39;s a crack in everything. That&#39;s how the light gets in.'],
                         startDelay: 300,
                         typeSpeed: 100,
                         loop: true,
@@ -339,9 +339,7 @@
 
 
 <script>
-    // 每天切换 banner 图.  Switch banner image every day.
-    var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
-    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
+    $('.bg-cover').css('background-image', 'url(/medias/banner/0.jpg)');
 </script>
 
 
@@ -638,8 +636,6 @@ $(function () {
     })();
 </script>
 
-    
-    <script src="/libs/others/clicklove.js" async="async"></script>
     
     
     <script async src="/libs/others/busuanzi.pure.mini.js"></script>

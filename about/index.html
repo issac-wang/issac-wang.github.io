@@ -320,7 +320,7 @@
         <div class="brand">
             <div class="title center-align">
                 
-                PM DIARY
+                产品罐头
                 
             </div>
 
@@ -330,7 +330,7 @@
                 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
                 <script>
                     var typed = new Typed("#subtitle", {
-                        strings: ['万物皆有裂痕，那是光照进来的地方。','There&#39;s a crack in everything. That&#39;s how the light gets in.'],
+                        strings: ['万物皆有裂痕，但那是光照进来的地方。','There&#39;s a crack in everything. That&#39;s how the light gets in.'],
                         startDelay: 300,
                         typeSpeed: 100,
                         loop: true,
@@ -346,9 +346,7 @@
 
 
 <script>
-    // 每天切换 banner 图.  Switch banner image every day.
-    var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
-    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
+    $('.bg-cover').css('background-image', 'url(/medias/banner/0.jpg)');
 </script>
 
 
@@ -372,6 +370,11 @@
 
 
 
+<div class="statis">
+    <span class="count"><a href="/tags">6</a></span>
+    <span class="name">标签</span>
+</div>
+
 
                     </div>
                     <div class="col s12 m12 l4">
@@ -391,6 +394,11 @@
 
 
 
+
+<div class="statis">
+    <span class="count"><a href="/tags">6</a></span>
+    <span class="name">标签</span>
+</div>
 
 
                                 </div>
@@ -524,7 +532,7 @@
                 name: '文章篇数',
                 type: 'line',
                 color: ['#6772e5'],
-                data: [0,0,0,0,0,0,0,0,0,0,0,0,2],
+                data: [0,0,0,0,0,0,0,0,0,0,0,0,1],
                 markPoint: {
                     symbolSize: 45,
                     color: ['#fa755a','#3ecf8e','#82d3f4'],
@@ -590,7 +598,7 @@
         xAxis: [
             {
                 type: 'category',
-                data: []
+                data: ["竞品分析","携程","飞猪","社交功能","旅拍","发现"]
             }
         ],
         yAxis: [
@@ -603,7 +611,7 @@
                 type: 'bar',
                 color: ['#82d3f4'],
                 barWidth : 18,
-                data: [],
+                data: [1,1,1,1,1,1],
                 markPoint: {
                     symbolSize: 45,
                     data: [{
@@ -771,6 +779,42 @@
     <div class="other-skills chip-container" data-aos="zoom-in-up">
         <div class="sub-title center-align"><i class="fa fa-book"></i>&nbsp;&nbsp;其他技能</div>
         <div class="tag-chips center-align">
+            
+            
+            <a href="/tags/%E7%AB%9E%E5%93%81%E5%88%86%E6%9E%90/">
+                <span class="chip center-align waves-effect waves-light chip-default">竞品分析</span>
+            </a>
+            
+            
+            
+            <a href="/tags/%E6%90%BA%E7%A8%8B/">
+                <span class="chip center-align waves-effect waves-light chip-default">携程</span>
+            </a>
+            
+            
+            
+            <a href="/tags/%E9%A3%9E%E7%8C%AA/">
+                <span class="chip center-align waves-effect waves-light chip-default">飞猪</span>
+            </a>
+            
+            
+            
+            <a href="/tags/%E7%A4%BE%E4%BA%A4%E5%8A%9F%E8%83%BD/">
+                <span class="chip center-align waves-effect waves-light chip-default">社交功能</span>
+            </a>
+            
+            
+            
+            <a href="/tags/%E6%97%85%E6%8B%8D/">
+                <span class="chip center-align waves-effect waves-light chip-default">旅拍</span>
+            </a>
+            
+            
+            
+            <a href="/tags/%E5%8F%91%E7%8E%B0/">
+                <span class="chip center-align waves-effect waves-light chip-default">发现</span>
+            </a>
+            
             
         </div>
     </div>
@@ -1090,8 +1134,6 @@ $(function () {
     })();
 </script>
 
-    
-    <script src="/libs/others/clicklove.js" async="async"></script>
     
     
     <script async src="/libs/others/busuanzi.pure.mini.js"></script>
