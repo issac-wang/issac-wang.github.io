@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="携程vs飞猪 - 社交功能分析, PM DIARY">
+    <meta name="keywords" content="中后台PRD模板结构, PM DIARY">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>携程vs飞猪 - 社交功能分析 | PM DIARY</title>
+    <title>中后台PRD模板结构 | PM DIARY</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -315,7 +315,7 @@
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">携程vs飞猪 - 社交功能分析</h1>
+                    <h1 class="description center-align post-title">中后台PRD模板结构</h1>
                 </div>
             </div>
         </div>
@@ -467,7 +467,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-08-02
+                    2020-06-02
                 </div>
                 
 
@@ -492,271 +492,7 @@
 <hr>
 <p>最近在为出行做准备，使用了不同的OTA平台，发现移动端的旅行app近期重点放在了社交功能上。本文将对携程旅行与飞猪这两款APP的社交功能进行了竞品分析，试图从中提炼出他们各自的优缺点，并进行总结。</p>
 <h2 id="一、分析目的"><a href="#一、分析目的" class="headerlink" title="一、分析目的"></a>一、分析目的</h2><p>在线OTA厂商正结合短视频等新兴媒体工具对产品进行各类精细化运营，本次分析将探索主流OTA产品的社交内容功能，并思考未来的产品走向。</p>
-<h2 id="二、竞品选择"><a href="#二、竞品选择" class="headerlink" title="二、竞品选择"></a>二、竞品选择</h2><h3 id="2-1-产品版本信息"><a href="#2-1-产品版本信息" class="headerlink" title="2.1 产品版本信息"></a>2.1 产品版本信息</h3><ul>
-<li><p>  携程旅行 v8.5.0</p>
-</li>
-<li><p>  飞猪 v9.3.0</p>
-</li>
-</ul>
-<h3 id="2-2-选择理由"><a href="#2-2-选择理由" class="headerlink" title="2.2 选择理由"></a>2.2 选择理由</h3><p>二者都为市面上较为流行且口碑较好的综合旅行产品，有一定的参考借鉴价值。</p>
-<ul>
-<li><p>  携程旅行作为一款老牌OTA产品，在市场开拓与产品设计上都有成熟的经验，是旅游行业的龙头产品。基于庞大的用户基础，携程一直在社交功能上进行着探索，先后投资过蝉游记与氢气球等游记应用，在2018年年底又推出了“旅拍”频道，增加新的内容与社交属性。</p>
-</li>
-<li><p>  飞猪作为一款新兴OTA产品，基于阿里巴巴强大的平台导流在近年内成为了OTA行业的强势竞争者。在社交功能上有一个“发现”入口，提供了一个综合的社交与内容社区。</p>
-</li>
-</ul>
-<h3 id="2-3-测试环境"><a href="#2-3-测试环境" class="headerlink" title="2.3 测试环境"></a>2.3 测试环境</h3><ul>
-<li><p>  移动设备：Iphone 6s</p>
-</li>
-<li><p>  操作系统：IOS 12.3.1</p>
-</li>
-</ul>
-<h2 id="三、产品市场分析"><a href="#三、产品市场分析" class="headerlink" title="三、产品市场分析"></a>三、产品市场分析</h2><h3 id="3-1-目前OTA市场现状"><a href="#3-1-目前OTA市场现状" class="headerlink" title="3.1 目前OTA市场现状"></a>3.1 目前OTA市场现状</h3><p>根据中国文化和旅游部的统计报告显示，2018年中国旅游业收入为5.97万亿人民币，同比增长10.6%，随着互联网普及率的逐渐平稳，人口红利的逐渐减少使得整体旅游业市场进入中高速增长阶段，增速逐渐放缓。</p>
-<p><img src="/medias/social/s2.jpg"></p>
-<p>根据Analysys易观的数据统计，2018年中国在线旅游市场交易规模为9754.25亿元，同比增长9.3%，占总体旅游市场的16.3%，是旅行行业的一大支柱。其中，在线交通市场收入占69.9%，在线住宿市场收入占19.3%，在线度假旅游市场占10.8%。</p>
-<p>从图表中可以看出，受到旅游业整体增速放缓以及宏观经济下行的影响，整体在线旅游交易规模增速在近两年大幅放缓，经过了2013-2016的高速发展后，正稳步进入成熟发展期，受到航司“提直降代”竞争策略和酒店卫生事件的影响，使得2018年在线旅游市场进一步缓慢增长。</p>
-<p><img src="/medias/social/s3.jpg"></p>
-<p><img src="/medias/social/s4.jpg"></p>
-<p>从在线旅游细分市场的占比可以发现，人们对旅游产品品质的要求在不断提高，在线住宿与在线度假旅游的占比连续三年持续增长。在线交通与在线住宿两大部分依旧瓜分了绝大部分的市场。根据Analysys易观的数据统计，主流OTA厂商在2017-2018年的市场份额如下：</p>
-<p><img src="/medias/social/s5.jpg"></p>
-<p><img src="/medias/social/s6.jpg"></p>
-<p><strong>携程旅行</strong></p>
-<ul>
-<li>  作为老牌的OTA企业，在交通和住宿这两方面的市场份额上都是行业龙头，同时携程旅行和去哪儿已经在2015年完成资本合并，并且收购了艺龙，在整个OTA行业基本处于垄断地位。</li>
-</ul>
-<p><strong>飞猪</strong></p>
-<ul>
-<li>  由“阿里旅行”改名而来，近年来借助于阿里大平台的流量逐渐在市场中取得一定的成果，用户群体更为年轻化。区别于传统OTA的自采自卖模式，飞猪的理念是通过阿里巴巴大数据平台促进航空酒店等公司与消费者进行更积极的互动以产生更多价值。</li>
-</ul>
-<p>下表是携程旅行和飞猪的数据比较（数据来源：alexa.cn &amp; 七麦数据）：</p>
-<p><img src="/medias/social/s7.png"></p>
-<h3 id="3-2-人群画像"><a href="#3-2-人群画像" class="headerlink" title="3.2 人群画像"></a>3.2 人群画像</h3><p><img src="/medias/social/s8.jpg"></p>
-<p>通过百度指数的人群画像统计，从地域分布上来看，使用旅行类app的用户主要分布在沿海地区，内陆地区使用的相对较少。这是由于沿海地区经济发展程度相对内陆地区更高。携程旅行和飞猪这二者，在华东华南都有一定的用户基础。在华北地区，携程旅行的用户基础比飞猪更好，而在华中地区，飞猪的用户基础要比携程更好一些。</p>
-<p><img src="/medias/social/s9.jpg"></p>
-<p>从年龄分布上来看，旅游产品的主要用户年龄集中在20-49岁，其中飞猪对20-29岁的用户更有吸引力，更受年轻人群体欢迎。而30-49岁的商务人士选择携程旅行的占比更大，更受商务人士的欢迎。</p>
-<p>从性别分布上来看，二者用户群体的性别分布基本相近，说明这两个产品都较为成熟，随着服务的精准化，可以更好的针对不同性别推荐对应的产品以满足各类不同的需求。</p>
-<h3 id="3-3-目标用户"><a href="#3-3-目标用户" class="headerlink" title="3.3 目标用户"></a>3.3 目标用户</h3><p><strong>携程旅行网</strong></p>
-<ul>
-<li>  主要针对中高收入的商务人士，这一用户群体消费能力高，对产品的要求更高，对于平台来说赚取的佣金也相对更高。并且消费频次稳定，受季节波动的影响较小，又由于时间成本高，希望在一个网站上就能获得尽可能详细的信息，倾向于一站式完成整个交通、住宿以及旅行产品的购买流程。</li>
-</ul>
-<p><strong>飞猪</strong></p>
-<ul>
-<li>  主要针对年轻群体，如学生、刚工作不久的工作人士等，用户基数大，需求大。年轻群体大多使用过阿里巴巴的各类产品，对阿里品牌的忠诚度也高。这一用户群体对价格较为敏感，时间成本相对商务人士更低，倾向于通过比价找到最优惠的机票、酒店以及旅游产品。低价产品与出境游产品对这一用户群体的吸引力很高。</li>
-</ul>
-<h2 id="四、产品战略分析"><a href="#四、产品战略分析" class="headerlink" title="四、产品战略分析"></a>四、产品战略分析</h2><h3 id="4-1-产品发展"><a href="#4-1-产品发展" class="headerlink" title="4.1 产品发展"></a>4.1 产品发展</h3><p><strong>携程旅行网</strong></p>
-<ul>
-<li><p>  携程旅行网创立于1999年，总部设在中国上海，整合了高科技产业与传统旅行业，向超过3亿会员提供集无线应用、酒店预订、机票预订、旅游度假、商旅管理及旅游资讯在内的全方位旅行服务。处于在线旅行服务市场领先地位，连续4年被评为中国第一旅游集团，目前是全球市值第二的在线旅行服务公司。</p>
-</li>
-<li><p>  2010年，携程投资台湾易游网和香港永安旅游，实现两岸三地的互通。2014年，投资途风旅行网，业务延伸及北美洲。2015年战略投资艺龙旅行网，并与百度达成股权置换交易完成对去哪儿网的控股。2016年战略投资印度最大旅游企业MakeMyTrip，并在新加坡成立了东南亚区域总部。同年与纵横、海鸥、途风达成合作，加大北美地区合作，投资英国机票搜索平台天巡，完成了对海外机票市场的布局，完成全球化相关业务布局。</p>
-</li>
-</ul>
-<p><strong>飞猪</strong></p>
-<ul>
-<li>  飞猪是阿里巴巴旗下的综合性旅游出行服务平台，于2014年由旗下的航旅事业部升级组建而来，并在2016年从“阿里旅行”改名为“飞猪”。整合了数千家机票代理商、航空公司、旅行社、旅行代理商资源，直签酒店，客栈卖家等，为广大旅游者提供特价机票，酒店预订，客栈查询，国内外度假信息，门票购买，签证代理，旅游卡券，租车，邮轮等旅游产品的信息搜索，购买及售后服务。</li>
-</ul>
-<h3 id="4-2-产品定位"><a href="#4-2-产品定位" class="headerlink" title="4.2 产品定位"></a>4.2 产品定位</h3><p><strong>携程旅行网</strong></p>
-<ul>
-<li><p>  携程旅行网(<a target="_blank" rel="noopener" href="http://www.ctrip.com/">www.ctrip.com</a>)：提供无线应用、酒店预订、机票预订、旅游度假、商旅管理及旅游资讯在内的全方位旅行服务。</p>
-</li>
-<li><p>  关键词：酒店、机票、度假、商旅、资讯，全方位旅行服务</p>
-</li>
-<li><p>  分析：携程旅行网是传统的OTA企业，作为机票、酒店及各类旅游产品的代理商，搭建连接消费者的平台，赚取中间佣金来实现盈利。同时也可以加强不同产品之间的联系，实现一站式下单，让不同的用户在单独的平台上购买到所有需要的旅游产品，全方位提供旅游服务。</p>
-</li>
-</ul>
-<p><strong>社交功能产品：旅拍</strong></p>
-<ul>
-<li>  通过新的社交功能“旅拍”，增加社交化属性，加强高质UGC内容产出，建立具有粘性的用户社区，吸引更多新用户加入。</li>
-</ul>
-<p><strong>飞猪</strong></p>
-<ul>
-<li><p>  飞猪(<a target="_blank" rel="noopener" href="http://www.fliggy.com/">www.fliggy.com</a>)：提供特价机票，酒店预订，客栈查询，国内外度假信息，门票购买，签证代理，旅游卡券，租车，邮轮等旅游产品的信息搜索，购买及售后服务。</p>
-</li>
-<li><p>  关键词：特价机票，酒店，度假，信息搜索，购买与售后服务</p>
-</li>
-<li><p>  分析：飞猪区别于传统的OTA企业，而是才用了一种OTM模式，即在线旅游生态。近年来，由于传统OTA平台对用户信息单项封闭，对服务定价拥有绝对控制力，导致航空公司与传统OTA平台的摩擦日益剧增。飞猪的平台定位并非封闭式的中间平台，而是为航空公司、机场、酒店、旅行社等商家提供一个旅游生态系统，让商家直接面对用户，利用阿里巴巴的大数据技术支持企业，帮助用户获得尽可能多的优惠与低价产品与出境游产品。</p>
-</li>
-</ul>
-<p><strong>社交功能产品：发现</strong></p>
-<ul>
-<li>  通过“发现”入口，提供各类旅游游记、资讯、视频等，提升用户活跃度，为其旅游产品引流。</li>
-</ul>
-<h2 id="五、产品结构与范围分析"><a href="#五、产品结构与范围分析" class="headerlink" title="五、产品结构与范围分析"></a>五、产品结构与范围分析</h2><h3 id="5-1-产品结构对比"><a href="#5-1-产品结构对比" class="headerlink" title="5.1 产品结构对比"></a>5.1 产品结构对比</h3><p><strong>携程旅行 – 旅拍</strong></p>
-<p><img src="/medias/social/s10.jpg"></p>
-<p><strong>飞猪 – 发现</strong></p>
-<p><img src="/medias/social/s11.jpg"></p>
-<h3 id="5-2-主要社交功能对比"><a href="#5-2-主要社交功能对比" class="headerlink" title="5.2 主要社交功能对比"></a>5.2 主要社交功能对比</h3><p>由于产品具有多个功能块，这次的竞品分析主要分析其社交功能块</p>
-<p><img src="/medias/social/s12.png"></p>
-<h4 id="5-2-1-个人主页"><a href="#5-2-1-个人主页" class="headerlink" title="5.2.1 个人主页"></a>5.2.1 个人主页</h4><p>在社交功能中，二者都提供了基本的个人主页的展示功能，都可以查看历史动态，有一个消息通知入口，同时会显示用户账号的昵称、签名以及称号等个人信息。</p>
-<p><img src="/medias/social/s13.jpg"></p>
-<p><strong>携程旅行-旅拍</strong></p>
-<p>携程旅行-旅拍在个人主页上的特色功能有：</p>
-<blockquote>
-<p>  1.以时间轴，从近到远的顺序展示历史动态，内容形式统一，展示了目的地和文案，缩略图最多展示3张。提供点赞、评论、收藏、分享入口。</p>
-</blockquote>
-<blockquote>
-<p>  2.提供了旅行成就的展示，显示了总共发表的旅拍数量、目的地以及国家数量，增强用户的成就感，提升粘性，鼓励用户持续更新内容。</p>
-</blockquote>
-<blockquote>
-<p>  3.提供了添加好友的入口，可以通过通讯录、微信、QQ、查找这四种方式添加或邀请自己的好友，建立熟人社交圈。同时，也可以关注系统推荐的其他优质KOL用户。</p>
-</blockquote>
-<blockquote>
-<p>  4.提供主页背景更换功能，允许用户上传专属背景，界面更为个性化。</p>
-</blockquote>
-<p><strong>飞猪-发现</strong></p>
-<p>飞猪-发现在个人主页上的特色功能有：</p>
-<blockquote>
-<p>  1.分标签展示总共五种内容类型，分别是点评、结伴、头条、旅行笔记和游记，每一类内容的展示排版方式各不相同。</p>
-</blockquote>
-<blockquote>
-<p>  2.点评展示了景点、评论及其打分，缩略图最多展示3张。</p>
-</blockquote>
-<blockquote>
-<p>  3.结伴展示了用户想要前往的目的地、出发时间、配图以及想要找的侣伴。缩略图最多展示3张，同时显示阅读数、点赞数和评论数。</p>
-</blockquote>
-<blockquote>
-<p>  4.头条、游记、旅行笔记都展示了标题、缩略图以及阅读、点赞、分享情况。头条简略，只有一个标题和一个缩略图。游记在头条的基础上添加了摘要与地点。旅行笔记在游记的基础上将缩略图上限增加到了3张。</p>
-</blockquote>
-<h4 id="5-2-2-任务奖励"><a href="#5-2-2-任务奖励" class="headerlink" title="5.2.2 任务奖励"></a>5.2.2 任务奖励</h4><p>在任务奖励这一功能上，携程旅行在“旅拍”功能主界面中特意留出一个入口，针对旅拍专门设计了一个任务悬赏奖励功能，而飞猪并未针对“发现”功能设计专属的任务奖励功能，只在其他功能块中提供飞猪账号的积分功能，同时在“发现”功能主界面上也不提供积分入口。</p>
-<p><img src="/medias/social/s14.jpg"></p>
-<p><strong>携程旅行-旅拍</strong></p>
-<p>旅拍的任务奖励功能主要分为两块：</p>
-<blockquote>
-<p>  1.旅拍任务：提供了签到、积分兑换、任务规则显示、详细任务说明和任务分享功能，使用旅拍完成新人任务与每日任务，可以获得积分，提升用户活跃度。得到的积分可以在积分商城中兑换旅游相关产品。</p>
-</blockquote>
-<blockquote>
-<p>  2.悬赏计划：提供了悬赏规则显示、悬赏分享、目的地推荐和导航功能。悬赏计划主要目的是鼓励用户去附近的地标进行打卡，比旅拍任务更有针对性，是个限时活动。</p>
-</blockquote>
-<h4 id="5-2-3-资讯显示-主页"><a href="#5-2-3-资讯显示-主页" class="headerlink" title="5.2.3 资讯显示-主页"></a>5.2.3 资讯显示-主页</h4><p>二者在主界面上都提供了基本的资讯显示功能，分为内容搜索、热门景点推荐与分标签查看资讯，并且显示旅拍信息所获得的点赞量与阅读量。</p>
-<p><img src="/medias/social/s15.jpg"></p>
-<p><strong>携程旅行-旅拍</strong></p>
-<p>携程旅行-旅拍在主界面上的特色功能有：</p>
-<blockquote>
-<p>  1.每一条信息展示都有对应的位置标签，进入标签后可直接看到相同地区类似旅拍。</p>
-</blockquote>
-<blockquote>
-<p>  2.提供活动入口，对应最近的赏金计划，对用户曝光度更高。</p>
-</blockquote>
-<blockquote>
-<p>  3.提供附近信息推荐，有独立的的同城页面，如下图。提供同城的热门景点介绍，并以更精准的标签对同城旅拍进行分类展示。</p>
-</blockquote>
-<p><img src="/medias/social/s16.jpg"></p>
-<p><strong>飞猪-发现</strong></p>
-<p>飞猪-发现在主界面上的特色功能有：</p>
-<blockquote>
-<p>  具有两套显示界面，一套是类似旅拍的瀑布流布局，另一套是类似抖音的短视频布局，如下图。其中有推荐与精选这两个分类，推荐主要是提供用户上传的短视频，短视频有对应的地理位置标签，并配以文案。精选主要是提供特定主题，并展示与其关联的短视频。</p>
-</blockquote>
-<p><img src="/medias/social/s17.jpg"></p>
-<h3 id="5-2-4-资讯显示–详情页"><a href="#5-2-4-资讯显示–详情页" class="headerlink" title="5.2.4 资讯显示–详情页"></a>5.2.4 资讯显示–详情页</h3><p>二者的资讯详情页面如下：</p>
-<p><img src="/medias/social/s18.jpg"></p>
-<p><strong>携程旅行-旅拍</strong></p>
-<p>携程旅行-旅拍在资讯详情页上的特色功能：</p>
-<blockquote>
-<p>  1.提供话题关联功能，允许用户添加关联话题，方便其他用户利用关键词精准搜索。</p>
-</blockquote>
-<blockquote>
-<p>  2.推荐相关旅游产品，利用旅拍内容进行引流，使相关的旅游产品曝光度更高。</p>
-</blockquote>
-<blockquote>
-<p>  3.推荐目的地附近的其他旅拍。</p>
-</blockquote>
-<p><strong>飞猪-发现</strong></p>
-<p>飞猪-发现在资讯详情页上的特色功能：</p>
-<blockquote>
-<p>  1.提供旅游笔记目录，方便用户快速定位文章内容。</p>
-</blockquote>
-<blockquote>
-<p>  2.推荐与笔记类似的其他笔记。</p>
-</blockquote>
-<h4 id="5-2-5-社交互动"><a href="#5-2-5-社交互动" class="headerlink" title="5.2.5 社交互动"></a>5.2.5 社交互动</h4><p>二者都提供了基本的社交互动功能，分为新动态查看、发布动态、关联话题、添加关注、评论、点赞、收藏、分享、相关推荐和跳转对应景点功能。</p>
-<p><img src="/medias/social/s19.jpg"></p>
-<p><strong>飞猪-发现</strong></p>
-<p>除这些基本社交功能，飞猪的发现相比携程旅行的旅拍在社交互动上，有以下特色功能：</p>
-<blockquote>
-<p>  1.提供了点评功能，以直观打分配合文字图片形式对景点打分，评价结果更直观。</p>
-</blockquote>
-<blockquote>
-<p>  2.提供了结伴功能，通过发布目的地与时间寻找志同道合的旅行伙伴。</p>
-</blockquote>
-<h3 id="5-3-功能小结"><a href="#5-3-功能小结" class="headerlink" title="5.3 功能小结"></a>5.3 功能小结</h3><p><strong>携程旅行-旅拍</strong></p>
-<p><strong>优点：</strong></p>
-<blockquote>
-<p>  1.个人中心功能满足了用户的个性化需求，显示旅行成就，保持用户粘性，鼓励持续使用旅拍功能。</p>
-</blockquote>
-<blockquote>
-<p>  2.任务奖励功能刺激了低活跃度用户的使用欲望，保持了高活跃度用户的使用习惯。</p>
-</blockquote>
-<blockquote>
-<p>  3.资讯显示功能为用户提供了不同地点的旅游资讯，拓宽了用户视野，也提高了用户对附近地点资讯的了解度。结合内容系统会推荐目的地旅游产品，有利于刺激用户购买携程的旅游产品。</p>
-</blockquote>
-<blockquote>
-<p>  4.社交互动功能创造了旅游文化社区，加强了用户之间的交流，对拉新促活都有积极的作用，在社交互动的过程中用户也会获得对应的成就感与对携程平台的归属感。</p>
-</blockquote>
-<p><strong>缺点：</strong></p>
-<blockquote>
-<p>  用户在浏览社交内容后没有直观的评价体系，现有的旅拍不提供打分点评功能，用户只能通过文字图片自行理解，难以对景点建立起特定印象，没有完全激发用户的消费欲望。</p>
-</blockquote>
-<p><strong>飞猪-发现</strong></p>
-<p><strong>优点：</strong></p>
-<blockquote>
-<p>  1.个人中心功能虽个性化程度不高，但提供了非常丰富的内容分类，形式多样。</p>
-</blockquote>
-<blockquote>
-<p>  2.资讯显示功能的入口页面采用了文字和短视频两种形式。短视频形式基于其快速、时间成本低的特点，满足了用户希望快速了解资讯的需求。文字形式又可以满足用户希望深度了解资讯的需求。</p>
-</blockquote>
-<blockquote>
-<p>  3.社交互动功能上提供了结伴功能，帮用户在线上转为线下交流，而点评等功能有助于用户直观建立对目的地的评价。</p>
-</blockquote>
-<p><strong>缺点：</strong></p>
-<blockquote>
-<p>  1.短视频形式与文字形式的页面入口存在问题，系统默认为短视频模式，而文字形式的页面必须通过个人中心的更多内容发现才可以进入，用户很难发现。</p>
-</blockquote>
-<blockquote>
-<p>  2.结伴信息仅对已关注的用户显示，由于飞猪还没有建立足够成熟的熟人社交圈，导致这一功能使用率极低，并且无法通过搜索搜到该类型的资讯。</p>
-</blockquote>
-<h2 id="六、产品框架分析"><a href="#六、产品框架分析" class="headerlink" title="六、产品框架分析"></a>六、产品框架分析</h2><p>以下是二者的发布业务流程：</p>
-<p><strong>携程旅拍发布流程</strong></p>
-<p><img src="/medias/social/s20.png"></p>
-<p><strong>飞猪旅拍发布流程</strong></p>
-<p><img src="/medias/social/s21.jpg"></p>
-<p><strong>携程旅行-旅拍：</strong><br>携程旅拍的内容形式统一，旅拍入口为中间的核心入口，发布流程较短，将图片与视频分开，有简单的视频及图片处理功能，在编辑内容时，可以对之前上传的图片和视频重新编辑，整体操作便利简洁。</p>
-<blockquote>
-<p>  <strong>特点：流程较短，功能简单，操作便利</strong></p>
-</blockquote>
-<p><strong>飞猪-发现：</strong><br>飞猪的发现有短视频界面和文字界面，通过短视频界面可以发布短视频，提供了强大的视频编辑功能，创新地在旅游社交功能中引入了短视频模式。但使用传统文字界面时，流程过长，界面入口非常不明显，需要通过个人主页的跳转按钮才能进入，基本很难被访问到，在发布的过程中不能对已上传的图片视频重新编辑，只能重复整个过程，操作非常不便。</p>
-<blockquote>
-<p>  <strong>特点：短视频功能有新意，流程偏长，操作不便</strong></p>
-</blockquote>
-<h2 id="七、产品表现分析"><a href="#七、产品表现分析" class="headerlink" title="七、产品表现分析"></a>七、产品表现分析</h2><h3 id="7-1-交互操作"><a href="#7-1-交互操作" class="headerlink" title="7.1 交互操作"></a>7.1 交互操作</h3><p><strong>携程旅行-旅拍</strong></p>
-<p>旅拍的交互方式很简单，通过头部导航条的滑动可以快速切换不同的版块，同时在二级导航栏也使用了相同的方法，操作比较简洁。滑动至下方时，搜索框会隐藏并在左上方留出搜索按钮，在“关注”这一模块，交互形式类似于微信朋友圈，点击对应图标即可快速完成对应操作。</p>
-<p><img src="/medias/social/s22.jpg"></p>
-<p><strong>飞猪 – 发现</strong></p>
-<p>飞猪发现的短视频模式在交互方式上与抖音等短视频软件操作方式相同，非常容易上手，用户的学习成本很低。但在文字界面上，只有头部导航栏，类型过多比较臃肿。不能直接在关注页进行资讯分享，必须进入详情页才可以完成所有的交互操作，比较麻烦。</p>
-<p><img src="/medias/social/s23.jpg"></p>
-<h3 id="7-2-视觉风格"><a href="#7-2-视觉风格" class="headerlink" title="7.2 视觉风格"></a>7.2 视觉风格</h3><p>对比二者的视觉风格，可以总结以下的异同点：</p>
-<p><strong>相同点：</strong></p>
-<blockquote>
-<p> 1.整体设计为扁平化设计，字体统一，主题颜色与Logo颜色相同。</p>
-</blockquote>
-<p><strong>不同点：</strong></p>
-<blockquote>
-<p> 1.携程的旅拍是以卡片化的形式显示的，飞猪的发现是以帖子形式显示的。</p>
-</blockquote>
-<blockquote>
-<p> 2.携程的主题色为蓝色，冷色调传递了轻松、高效、简洁的导向，给用户留下高质量的印象。飞猪的主题色为橘色，暖色调传递了活泼、新鲜、热情的导向，给用户留下新奇的印象。</p>
-</blockquote>
-<h2 id="八、总结"><a href="#八、总结" class="headerlink" title="八、总结"></a>八、总结</h2><h3 id="8-1-产品总结"><a href="#8-1-产品总结" class="headerlink" title="8.1 产品总结"></a>8.1 产品总结</h3><p><strong>携程旅游-旅拍：</strong></p>
-<p>旅拍作为携程新出品的一项社交功能，功能完善并且结构简洁，主要是想打造成一个新兴的旅游文化社交圈，整合资讯、产品、UGC优质内容，提供流量入口，吸引更多新用户，提升老用户的活跃度，填补过去一站式旅游模式的内容短板。</p>
-<p>同时又有一定的不足之处，由于旅游产品应用是需求导向的，日常用户使用频率较低，在封闭的社交圈对推广不利。</p>
-<p><strong>飞猪-发现：</strong></p>
-<p>发现作为飞猪的一个重要社交功能块，内容丰富，结构完整，主要是想基于阿里巴巴的用户基数建立一个旅游资讯社区。直接引入短视频模式，很大程度提升了用户的粘性，帮助提升了用户的留存率。在大流量的基础上试图建立一个优质社交功能以满足用户的旅游社交需求，在未来可以帮助整个产品进一步发展。</p>
-<p>与此同时，发现功能的短视频、文字双页面是一大问题，在进入文字页面时的流程非常复杂，内容类型过多，且区分度小。部分功能，如约伴，使用频率很低，且无法通过搜索得到。</p>
-<h3 id="8-2-发展趋势"><a href="#8-2-发展趋势" class="headerlink" title="8.2 发展趋势"></a>8.2 发展趋势</h3><p>随着用户对于信息获取的媒介形式发生了新的变化。在线旅游厂商开始发力内容社交运营，逐渐通过对短视频、旅拍、图文、声音、直播等多维度信息传播方式的布局为用户提供多样化的、多场景的信息获取方式，一次激发用户旅行的灵感，刺激旅行消费。</p>
-<p><strong>1.加强产品推广与结合</strong></p>
-<p>最近，携程旅行的旅拍已经尝试与抖音等app展开了合作，优质的旅游社交内容对视频应用和旅游应用都非常有利。</p>
-<p>旅游社交功能未来应该进一步与视频类app合作，这样才能扩大用户规模，实现进一步增长。同时应该更多利用现有的旅游产品为旅游社交功能注入新鲜血液，比如在用户购买并结束了旅游产品后，除了现有的产品点评，应该鼓励用户使用旅拍上传旅游内容，既能提升社交功能的使用率，更能提升旅游产品价值，建立好印象。</p>
-<p><strong>2.优化用户体验</strong></p>
-<p>飞猪的发现在用户体验上还是有待改进，对于现有双界面入口可能还在抉择中，但最终还是应该要统一页面或是提供简单的入口。用户体验对于旅游社交功能十分重要，接下去进一步消除冗余功能，缩短用户的社交发布成本，完善整体社交功能流程。</p>
-
+<h2 id="二、竞品选择"><a href="#二、竞品选择" class="headerlink" title="二、竞品选择"></a>二、竞品选择</h2>
                 
             </div>
             <hr/>
@@ -782,7 +518,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://issac-wang.github.com/2019/08/02/social/">http://issac-wang.github.com/2019/08/02/social/</a>
+                    <a href="http://issac-wang.github.com/2020/06/02/prd/">http://issac-wang.github.com/2020/06/02/prd/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -1011,9 +747,76 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2020/06/02/prd/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="中后台PRD模板结构">
+                        
+                        <span class="card-title">中后台PRD模板结构</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-06-02
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            ISSAC
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E7%AB%9E%E5%93%81%E5%88%86%E6%9E%90/">
+                        <span class="chip bg-color">竞品分析</span>
+                    </a>
+                    
+                    <a href="/tags/%E6%90%BA%E7%A8%8B/">
+                        <span class="chip bg-color">携程</span>
+                    </a>
+                    
+                    <a href="/tags/%E9%A3%9E%E7%8C%AA/">
+                        <span class="chip bg-color">飞猪</span>
+                    </a>
+                    
+                    <a href="/tags/%E7%A4%BE%E4%BA%A4%E5%8A%9F%E8%83%BD/">
+                        <span class="chip bg-color">社交功能</span>
+                    </a>
+                    
+                    <a href="/tags/%E6%97%85%E6%8B%8D/">
+                        <span class="chip bg-color">旅拍</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%8F%91%E7%8E%B0/">
+                        <span class="chip bg-color">发现</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/2020/04/24/bactria/">
                     <div class="card-image">
@@ -1031,9 +834,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-04-24
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-04-24
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -1055,63 +858,6 @@
                     
                     <a href="/tags/%E7%96%AB%E6%83%85/">
                         <span class="chip bg-color">疫情</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2019/07/05/game/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="2018网易游戏高校MINI-GAME挑战赛记录">
-                        
-                        <span class="card-title">2018网易游戏高校MINI-GAME挑战赛记录</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-07-05
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            ISSAC
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/%E4%BA%A7%E5%93%81%E8%AE%BE%E8%AE%A1/">
-                        <span class="chip bg-color">产品设计</span>
-                    </a>
-                    
-                    <a href="/tags/%E7%BD%91%E6%98%93%E6%B8%B8%E6%88%8F/">
-                        <span class="chip bg-color">网易游戏</span>
-                    </a>
-                    
-                    <a href="/tags/MINI-GAME/">
-                        <span class="chip bg-color">MINI-GAME</span>
-                    </a>
-                    
-                    <a href="/tags/%E8%B7%91%E9%85%B7%E6%B8%B8%E6%88%8F%EF%BC%8C%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/">
-                        <span class="chip bg-color">跑酷游戏，项目管理</span>
                     </a>
                     
                 </div>
