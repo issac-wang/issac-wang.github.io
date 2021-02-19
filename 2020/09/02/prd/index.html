@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="中后台PRD模板结构, PM DIARY">
+    <meta name="keywords" content="中后台PRD模板规范, PM DIARY">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>中后台PRD模板结构 | PM DIARY</title>
+    <title>中后台PRD模板规范 | PM DIARY</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -315,7 +315,7 @@
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">中后台PRD模板结构</h1>
+                    <h1 class="description center-align post-title">中后台PRD模板规范</h1>
                 </div>
             </div>
         </div>
@@ -467,7 +467,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-06-02
+                    2020-09-02
                 </div>
                 
 
@@ -488,11 +488,56 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p><strong><img src="/medias/social/s1.jpg"></strong></p>
-<hr>
-<p>最近在为出行做准备，使用了不同的OTA平台，发现移动端的旅行app近期重点放在了社交功能上。本文将对携程旅行与飞猪这两款APP的社交功能进行了竞品分析，试图从中提炼出他们各自的优缺点，并进行总结。</p>
-<h2 id="一、分析目的"><a href="#一、分析目的" class="headerlink" title="一、分析目的"></a>一、分析目的</h2><p>在线OTA厂商正结合短视频等新兴媒体工具对产品进行各类精细化运营，本次分析将探索主流OTA产品的社交内容功能，并思考未来的产品走向。</p>
-<h2 id="二、竞品选择"><a href="#二、竞品选择" class="headerlink" title="二、竞品选择"></a>二、竞品选择</h2>
+                <p>PRD文档的撰写算是产品经理的必修课，一份好的PRD可以使所有相关方快速完善地了解需求的背景与实现方法，良好的维护习惯也可以在日后帮助交接方快速理解相关需求。</p>
+<p>然而作为一个入职不久的新人，日常工作中依旧会在PRD撰写中遇到问题，例如方案不完整、需求不清晰，这都会导致在后续的评审与开发中浪费大量的时间进行需求的补充与变更，效率较低。因此在借鉴了一定的参考资料并结合日常工作中遇到的问题，在此记录下了适用于我个人的中后台PRD模板规范，在接下来的时间里也会不断进行更新，期望产出一份最佳实践。</p>
+<h2 id="一、修订记录"><a href="#一、修订记录" class="headerlink" title="一、修订记录"></a>一、修订记录</h2><p>是否必要： <strong>必要</strong><br>说明: 在一般的API文档中，需要持续迭代的情况是非常常见的，因此会存在修订记录，用于快速了解每一次迭代的新功能。PRD文档亦是如此，需求和逻辑的不断改动也会增加理解的难度，因此更需要记录对应的修订记录，方便后续的追溯。</p>
+<p>目前总结下来，修订记录应该要包含以下几个字段：</p>
+<blockquote>
+<p>1)业务模块：商品系统、订单系统等<br>2)版本号：V+大版本号+小版本号+迭代日期<br>3)修订时间：20200923<br>4)修订内容说明<br>5)PRD文件链接<br>6)修订人<br>举例：</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>业务模块</th>
+<th>版本号</th>
+<th>修订时间</th>
+<th>修订内容说明</th>
+<th>PRD文件链接</th>
+<th>修订人</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>订单系统</td>
+<td>V1.0.200902</td>
+<td>2020.09.02</td>
+<td>订单全流程实现</td>
+<td>XXXX.rp</td>
+<td>王訸</td>
+</tr>
+<tr>
+<td>订单系统</td>
+<td>V1.7.201109</td>
+<td>2020.11.09</td>
+<td>支持订单过期自动退功能</td>
+<td>XXXX.rp</td>
+<td>王訸</td>
+</tr>
+<tr>
+<td>订单系统</td>
+<td>V2.0.210123</td>
+<td>2021.01.23</td>
+<td>支持部分退功能</td>
+<td>XXXX.rp</td>
+<td>王訸</td>
+</tr>
+</tbody></table>
+<p>需要注意的是：在Axure中，修订记录应在主页面中，每一个版本号对应的PRD需要维护成一个单独的子页面。</p>
+<h2 id="二、项目背景"><a href="#二、项目背景" class="headerlink" title="二、项目背景"></a>二、项目背景</h2><p>是否必要： <strong>必要</strong><br>说明：项目背景是需求的背景描述，简要的背景描述可以清晰表达出现状的痛点与预期的目标，凸显需求的意义。<br>目前总结下来，项目背景应该要包含以下几个字段：</p>
+<blockquote>
+<p>1)场景&amp;痛点：目前涉及到的使用场景以及需求方在该场景下的核心痛点和诉求<br>2)预期目标：通过该项目预计可以解决问题的范围与程度，细化到实际可进行评价的指标<br>3)方案描述：大致描述方案思路，如需拆分也一并逐一简要描述<br>4)项目价值：预估项目上线后的实际价值，计算ROI用于体现项目价值，方便后续的优先级排序，同时也可以让自己感受到自身工作的价值与成就感。</p>
+</blockquote>
+<p>需要注意的是：单个项目往往只解决一个问题或同类型的多个问题，围绕核心问题进行解决。</p>
+
                 
             </div>
             <hr/>
@@ -518,7 +563,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://issac-wang.github.com/2020/06/02/prd/">http://issac-wang.github.com/2020/06/02/prd/</a>
+                    <a href="http://issac-wang.github.com/2020/09/02/prd/">http://issac-wang.github.com/2020/09/02/prd/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -752,13 +797,13 @@
                 <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
             <div class="card">
-                <a href="/2020/06/02/prd/">
+                <a href="/2020/09/02/prd/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="中后台PRD模板结构">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="中后台PRD模板规范">
                         
-                        <span class="card-title">中后台PRD模板结构</span>
+                        <span class="card-title">中后台PRD模板规范</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -769,7 +814,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-06-02
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-02
                             </span>
                         <span class="publish-author">
                             
